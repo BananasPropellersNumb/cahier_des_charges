@@ -12,6 +12,12 @@
 \usepackage[top=8cm, bottom=3cm, left=3cm, right=3cm]{geometry}
 
 
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+
+
+
 
 \begin{document}
 \pagenumbering{arabic}
@@ -30,13 +36,21 @@
 \subsection{la mort}
 
 \newpage
-\begin{tabular}{|c|c|c|}
-	\hline
-	 materiel & cout & prix   \\ 
-	 \hline
- 	 gamecube & une vie & Meuh  \\ 
-	\hline
-\end{tabular}
+\begin{tabular}{|R{3.5cm}||C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|}
+\hline  & Tancrede & David & Eric & Fabien\\
+\hline  Gameplay & X & X & X & X \\
+\hline  Musique et Son & X &  &  & X\\
+\hline  Gameplay & X & X & X & X\\
+\hline  IA & X & X & X &   \\
+\hline  Map & X & X &  & X  \\
+\hline  Quetes et Scenario &  & X &  & X\\
+\hline  Physique &  & X &  & X \\
+\hline  Interface & X & X &  &  \\
+\hline  Cinematique &  & X & X &  \\
+\hline  Site Web &  & X & X &  \\
+\hline  Reseaux et Multi & X &  & X &  \\
+\hline  
+\end{tabular}\\ 
 
 
 
